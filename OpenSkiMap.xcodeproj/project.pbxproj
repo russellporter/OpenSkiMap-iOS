@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46F441D81640EBD500946868 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F441D71640EBD500946868 /* UIKit.framework */; };
+		46F441DA1640EBD500946868 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F441D91640EBD500946868 /* Foundation.framework */; };
+		46F441DC1640EBD500946868 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F441DB1640EBD500946868 /* CoreGraphics.framework */; };
+		46F441E21640EBD500946868 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46F441E01640EBD500946868 /* InfoPlist.strings */; };
+		46F441E41640EBD500946868 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F441E31640EBD500946868 /* main.m */; };
+		46F441E81640EBD500946868 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F441E71640EBD500946868 /* SKAppDelegate.m */; };
+		46F441EA1640EBD500946868 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F441E91640EBD500946868 /* Default.png */; };
+		46F441EC1640EBD500946868 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F441EB1640EBD500946868 /* Default@2x.png */; };
+		46F441EE1640EBD500946868 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F441ED1640EBD500946868 /* Default-568h@2x.png */; };
+		46F441F11640EBD500946868 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F441EF1640EBD500946868 /* MainStoryboard_iPhone.storyboard */; };
+		46F441F41640EBD500946868 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F441F21640EBD500946868 /* MainStoryboard_iPad.storyboard */; };
+		46F441F71640EBD500946868 /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F441F61640EBD500946868 /* SKViewController.m */; };
+		46F441FF1640EBD500946868 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F441FE1640EBD500946868 /* SenTestingKit.framework */; };
+		46F442001640EBD500946868 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F441D71640EBD500946868 /* UIKit.framework */; };
+		46F442011640EBD500946868 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F441D91640EBD500946868 /* Foundation.framework */; };
+		46F442091640EBD500946868 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46F442071640EBD500946868 /* InfoPlist.strings */; };
+		46F4420C1640EBD500946868 /* OpenSkiMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F4420B1640EBD500946868 /* OpenSkiMapTests.m */; };
+		46F442161640EC3D00946868 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F442151640EC3D00946868 /* MapKit.framework */; };
+		46F4421B1640ED1D00946868 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F442181640ED1D00946868 /* TileOverlay.m */; };
+		46F4421C1640ED1D00946868 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F4421A1640ED1D00946868 /* TileOverlayView.m */; };
+		46F4421E1640EE2500946868 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F442181640ED1D00946868 /* TileOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46F4421F1640EE2500946868 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F4421A1640ED1D00946868 /* TileOverlayView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46F442291640F61800946868 /* NSUserDefaults+OpenSkiMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F442281640F61800946868 /* NSUserDefaults+OpenSkiMap.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46F442021640EBD500946868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F441CA1640EBD500946868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46F441D21640EBD500946868;
+			remoteInfo = OpenSkiMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46F441D31640EBD500946868 /* OpenSkiMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSkiMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F441D71640EBD500946868 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46F441D91640EBD500946868 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46F441DB1640EBD500946868 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46F441DF1640EBD500946868 /* OpenSkiMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkiMap-Info.plist"; sourceTree = "<group>"; };
+		46F441E11640EBD500946868 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46F441E31640EBD500946868 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46F441E51640EBD500946868 /* OpenSkiMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenSkiMap-Prefix.pch"; sourceTree = "<group>"; };
+		46F441E61640EBD500946868 /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
+		46F441E71640EBD500946868 /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
+		46F441E91640EBD500946868 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		46F441EB1640EBD500946868 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		46F441ED1640EBD500946868 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		46F441F01640EBD500946868 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		46F441F31640EBD500946868 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		46F441F51640EBD500946868 /* SKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
+		46F441F61640EBD500946868 /* SKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKViewController.m; sourceTree = "<group>"; };
+		46F441FD1640EBD500946868 /* OpenSkiMapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSkiMapTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F441FE1640EBD500946868 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		46F442061640EBD500946868 /* OpenSkiMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenSkiMapTests-Info.plist"; sourceTree = "<group>"; };
+		46F442081640EBD500946868 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46F4420A1640EBD500946868 /* OpenSkiMapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSkiMapTests.h; sourceTree = "<group>"; };
+		46F4420B1640EBD500946868 /* OpenSkiMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSkiMapTests.m; sourceTree = "<group>"; };
+		46F442151640EC3D00946868 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46F442171640ED1D00946868 /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
+		46F442181640ED1D00946868 /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
+		46F442191640ED1D00946868 /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayView.h; sourceTree = "<group>"; };
+		46F4421A1640ED1D00946868 /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlayView.m; sourceTree = "<group>"; };
+		46F442271640F61800946868 /* NSUserDefaults+OpenSkiMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+OpenSkiMap.h"; sourceTree = "<group>"; };
+		46F442281640F61800946868 /* NSUserDefaults+OpenSkiMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+OpenSkiMap.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46F441D01640EBD500946868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F442161640EC3D00946868 /* MapKit.framework in Frameworks */,
+				46F441D81640EBD500946868 /* UIKit.framework in Frameworks */,
+				46F441DA1640EBD500946868 /* Foundation.framework in Frameworks */,
+				46F441DC1640EBD500946868 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F441F91640EBD500946868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F441FF1640EBD500946868 /* SenTestingKit.framework in Frameworks */,
+				46F442001640EBD500946868 /* UIKit.framework in Frameworks */,
+				46F442011640EBD500946868 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46F441C81640EBD500946868 = {
+			isa = PBXGroup;
+			children = (
+				46F442151640EC3D00946868 /* MapKit.framework */,
+				46F441DD1640EBD500946868 /* OpenSkiMap */,
+				46F442041640EBD500946868 /* OpenSkiMapTests */,
+				46F441D61640EBD500946868 /* Frameworks */,
+				46F441D41640EBD500946868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46F441D41640EBD500946868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46F441D31640EBD500946868 /* OpenSkiMap.app */,
+				46F441FD1640EBD500946868 /* OpenSkiMapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46F441D61640EBD500946868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46F441D71640EBD500946868 /* UIKit.framework */,
+				46F441D91640EBD500946868 /* Foundation.framework */,
+				46F441DB1640EBD500946868 /* CoreGraphics.framework */,
+				46F441FE1640EBD500946868 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46F441DD1640EBD500946868 /* OpenSkiMap */ = {
+			isa = PBXGroup;
+			children = (
+				46F4421D1640ED2000946868 /* Tiles */,
+				46F441E61640EBD500946868 /* SKAppDelegate.h */,
+				46F441E71640EBD500946868 /* SKAppDelegate.m */,
+				46F441EF1640EBD500946868 /* MainStoryboard_iPhone.storyboard */,
+				46F441F21640EBD500946868 /* MainStoryboard_iPad.storyboard */,
+				46F441F51640EBD500946868 /* SKViewController.h */,
+				46F441F61640EBD500946868 /* SKViewController.m */,
+				46F441DE1640EBD500946868 /* Supporting Files */,
+				46F442271640F61800946868 /* NSUserDefaults+OpenSkiMap.h */,
+				46F442281640F61800946868 /* NSUserDefaults+OpenSkiMap.m */,
+			);
+			path = OpenSkiMap;
+			sourceTree = "<group>";
+		};
+		46F441DE1640EBD500946868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46F441DF1640EBD500946868 /* OpenSkiMap-Info.plist */,
+				46F441E01640EBD500946868 /* InfoPlist.strings */,
+				46F441E31640EBD500946868 /* main.m */,
+				46F441E51640EBD500946868 /* OpenSkiMap-Prefix.pch */,
+				46F441E91640EBD500946868 /* Default.png */,
+				46F441EB1640EBD500946868 /* Default@2x.png */,
+				46F441ED1640EBD500946868 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46F442041640EBD500946868 /* OpenSkiMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				46F4420A1640EBD500946868 /* OpenSkiMapTests.h */,
+				46F4420B1640EBD500946868 /* OpenSkiMapTests.m */,
+				46F442051640EBD500946868 /* Supporting Files */,
+			);
+			path = OpenSkiMapTests;
+			sourceTree = "<group>";
+		};
+		46F442051640EBD500946868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46F442061640EBD500946868 /* OpenSkiMapTests-Info.plist */,
+				46F442071640EBD500946868 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46F4421D1640ED2000946868 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				46F442171640ED1D00946868 /* TileOverlay.h */,
+				46F442181640ED1D00946868 /* TileOverlay.m */,
+				46F442191640ED1D00946868 /* TileOverlayView.h */,
+				46F4421A1640ED1D00946868 /* TileOverlayView.m */,
+			);
+			name = Tiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46F441D21640EBD500946868 /* OpenSkiMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F4420F1640EBD500946868 /* Build configuration list for PBXNativeTarget "OpenSkiMap" */;
+			buildPhases = (
+				46F441CF1640EBD500946868 /* Sources */,
+				46F441D01640EBD500946868 /* Frameworks */,
+				46F441D11640EBD500946868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenSkiMap;
+			productName = OpenSkiMap;
+			productReference = 46F441D31640EBD500946868 /* OpenSkiMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46F441FC1640EBD500946868 /* OpenSkiMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F442121640EBD500946868 /* Build configuration list for PBXNativeTarget "OpenSkiMapTests" */;
+			buildPhases = (
+				46F441F81640EBD500946868 /* Sources */,
+				46F441F91640EBD500946868 /* Frameworks */,
+				46F441FA1640EBD500946868 /* Resources */,
+				46F441FB1640EBD500946868 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46F442031640EBD500946868 /* PBXTargetDependency */,
+			);
+			name = OpenSkiMapTests;
+			productName = OpenSkiMapTests;
+			productReference = 46F441FD1640EBD500946868 /* OpenSkiMapTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F441CA1640EBD500946868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SK;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Russell Porter";
+			};
+			buildConfigurationList = 46F441CD1640EBD500946868 /* Build configuration list for PBXProject "OpenSkiMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 46F441C81640EBD500946868;
+			productRefGroup = 46F441D41640EBD500946868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46F441D21640EBD500946868 /* OpenSkiMap */,
+				46F441FC1640EBD500946868 /* OpenSkiMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46F441D11640EBD500946868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F441E21640EBD500946868 /* InfoPlist.strings in Resources */,
+				46F441EA1640EBD500946868 /* Default.png in Resources */,
+				46F441EC1640EBD500946868 /* Default@2x.png in Resources */,
+				46F441EE1640EBD500946868 /* Default-568h@2x.png in Resources */,
+				46F441F11640EBD500946868 /* MainStoryboard_iPhone.storyboard in Resources */,
+				46F441F41640EBD500946868 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F441FA1640EBD500946868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F442091640EBD500946868 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46F441FB1640EBD500946868 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46F441CF1640EBD500946868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F4421E1640EE2500946868 /* TileOverlay.m in Sources */,
+				46F4421F1640EE2500946868 /* TileOverlayView.m in Sources */,
+				46F441E41640EBD500946868 /* main.m in Sources */,
+				46F441E81640EBD500946868 /* SKAppDelegate.m in Sources */,
+				46F441F71640EBD500946868 /* SKViewController.m in Sources */,
+				46F442291640F61800946868 /* NSUserDefaults+OpenSkiMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F441F81640EBD500946868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F4420C1640EBD500946868 /* OpenSkiMapTests.m in Sources */,
+				46F4421B1640ED1D00946868 /* TileOverlay.m in Sources */,
+				46F4421C1640ED1D00946868 /* TileOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46F442031640EBD500946868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46F441D21640EBD500946868 /* OpenSkiMap */;
+			targetProxy = 46F442021640EBD500946868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46F441E01640EBD500946868 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46F441E11640EBD500946868 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		46F441EF1640EBD500946868 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46F441F01640EBD500946868 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		46F441F21640EBD500946868 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46F441F31640EBD500946868 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		46F442071640EBD500946868 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46F442081640EBD500946868 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46F4420D1640EBD500946868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46F4420E1640EBD500946868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46F442101640EBD500946868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenSkiMap/OpenSkiMap-Prefix.pch";
+				INFOPLIST_FILE = "OpenSkiMap/OpenSkiMap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46F442111640EBD500946868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenSkiMap/OpenSkiMap-Prefix.pch";
+				INFOPLIST_FILE = "OpenSkiMap/OpenSkiMap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		46F442131640EBD500946868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenSkiMap.app/OpenSkiMap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenSkiMap/OpenSkiMap-Prefix.pch";
+				INFOPLIST_FILE = "OpenSkiMapTests/OpenSkiMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		46F442141640EBD500946868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenSkiMap.app/OpenSkiMap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenSkiMap/OpenSkiMap-Prefix.pch";
+				INFOPLIST_FILE = "OpenSkiMapTests/OpenSkiMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46F441CD1640EBD500946868 /* Build configuration list for PBXProject "OpenSkiMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F4420D1640EBD500946868 /* Debug */,
+				46F4420E1640EBD500946868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F4420F1640EBD500946868 /* Build configuration list for PBXNativeTarget "OpenSkiMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F442101640EBD500946868 /* Debug */,
+				46F442111640EBD500946868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F442121640EBD500946868 /* Build configuration list for PBXNativeTarget "OpenSkiMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F442131640EBD500946868 /* Debug */,
+				46F442141640EBD500946868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F441CA1640EBD500946868 /* Project object */;
+}
